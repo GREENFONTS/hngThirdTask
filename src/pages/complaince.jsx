@@ -7,9 +7,33 @@ const Complaince = () => {
     ? "assets/png/background_mobile.png"
     : "assets/png/background.png";
   return (
-    <>
-      <Box weight="100%" margin="0px" padding="0px">
+    <Box minHeight="calc(100vh - 580px)">
+      <Box width="100%" margin="0px" padding="0px">
         <img src={backgroundImage} alt="backgroundImage" width="100%" />
+        <Box
+          position="absolute"
+          display="flex"
+          top="100px"
+          left="0"
+          sx={{
+            minHeight: { xs: "272px", sm: "200px", md: "300px", lg: "380px" },
+            minWidth: { xs: "100%", sm: "40%" },
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: { xs: "33px", sm: "20px", md: "24px", lg: "33px" },
+              lineHeight: { xs: "28px", sm: "40px" },
+              fontWeight: { xs: "600", sm: "700" },
+            }}
+            color="#F8FAFC"
+            letterSpacing="-0.02em"
+          >
+            Compliance
+          </Typography>
+        </Box>
       </Box>
 
       <Box
@@ -22,16 +46,15 @@ const Complaince = () => {
       >
         <Stack
           sx={{
-            maxWidth: { xs: "84%", sm: "90%", md: "588px" },
-
-            gap: { md: "32px" },
+            maxWidth: { xs: "100%", sm: "90%", md: "588px" },
+            gap: { xs: "32px" },
           }}
           direction="column"
         >
           <Typography
             sx={{
               fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "23px" },
-              lineHeight: { xs: "28px", sm: "28px" },
+              lineHeight: { xs: "28px" },
               fontWeight: { xs: "600", sm: "700" },
             }}
             color="#00296B"
@@ -42,9 +65,9 @@ const Complaince = () => {
 
           <Typography
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
+              fontSize: { xs: "14px" },
+              lineHeight: { xs: "20px", sm: "20px" },
+              fontWeight: { xs: "400" },
             }}
             color="#1E293B"
             letterSpacing="0.001em"
@@ -61,25 +84,25 @@ const Complaince = () => {
 
           <Typography
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
+              fontSize: { xs: "14px" },
+              lineHeight: { xs: "20px", sm: "20px" },
+              fontWeight: { xs: "400" },
             }}
             color="#1E293B"
             letterSpacing="0.001em"
           >
             For information on Street Rate’s API service capabilities that help
             you meet specific regulatory requirements,{" "}
-            <Link color="#0062FF" fontWeight="600">
+            <Link color="#0062FF" fontWeight="00">
               Check here
             </Link>
           </Typography>
 
           <Typography
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
+              fontSize: { xs: "14px" },
+              lineHeight: { xs: "20px", sm: "20px" },
+              fontWeight: { xs: "400" },
             }}
             color="#1E293B"
             letterSpacing="0.001em"
@@ -94,20 +117,21 @@ const Complaince = () => {
           <Typography
             sx={{
               fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "23px" },
-              lineHeight: { xs: "28px", sm: "28px" },
+              lineHeight: { xs: "28px" },
               fontWeight: { xs: "600", sm: "700" },
             }}
             color="#00296B"
             letterSpacing="-0.02em"
+            marginTop="20px"
           >
             Highlights of Street Rate’s approach
           </Typography>
 
           <Typography
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
+              fontSize: { xs: "14px" },
+              lineHeight: { xs: "20px", sm: "20px" },
+              fontWeight: { xs: "400" },
             }}
             marginBottom="0px"
             color="#1E293B"
@@ -120,9 +144,9 @@ const Complaince = () => {
             <li>
               <Typography
                 sx={{
-                  fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-                  lineHeight: { xs: "28px", sm: "20px" },
-                  fontWeight: { xs: "600", sm: "400" },
+                  fontSize: { xs: "14px" },
+                  lineHeight: { xs: "20px", sm: "20px" },
+                  fontWeight: { xs: "400" },
                 }}
                 color="#1E293B"
                 letterSpacing="0.001em"
@@ -136,9 +160,9 @@ const Complaince = () => {
             <li>
               <Typography
                 sx={{
-                  fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-                  lineHeight: { xs: "28px", sm: "20px" },
-                  fontWeight: { xs: "600", sm: "400" },
+                  fontSize: { xs: "14px" },
+                  lineHeight: { xs: "20px", sm: "20px" },
+                  fontWeight: { xs: "400" },
                 }}
                 color="#1E293B"
                 letterSpacing="0.001em"
@@ -151,9 +175,9 @@ const Complaince = () => {
             <li>
               <Typography
                 sx={{
-                  fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-                  lineHeight: { xs: "28px", sm: "20px" },
-                  fontWeight: { xs: "600", sm: "400" },
+                  fontSize: { xs: "14px" },
+                  lineHeight: { xs: "20px", sm: "20px" },
+                  fontWeight: { xs: "400" },
                 }}
                 color="#1E293B"
                 letterSpacing="0.001em"
@@ -168,11 +192,11 @@ const Complaince = () => {
 
           <Stack
             sx={{
-              maxWidth: { xs: "84%", sm: "90%", md: "587px" },
+              maxWidth: { xs: "100%", sm: "90%", md: "587px" },
 
-              gap: { md: "20px" },
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "17px" },
+              gap: { xs: "20px" },
+              fontSize: { xs: "14px" },
+              lineHeight: { xs: "17px" },
               fontWeight: { xs: "600", sm: "600" },
             }}
             direction="column"
@@ -181,9 +205,9 @@ const Complaince = () => {
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "23px" },
-                lineHeight: { xs: "28px", sm: "28px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "22.5px", sm: "20px", md: "24px", lg: "23px" },
+                lineHeight: { xs: "28px" },
+                fontWeight: { xs: "700" },
               }}
               color="#00296B"
               letterSpacing="-0.02em"
@@ -192,6 +216,7 @@ const Complaince = () => {
             </Typography>
 
             <Box
+              marginTop="20px"
               display="flex"
               justifyContent="space-between"
               alignItems="center"
@@ -232,7 +257,7 @@ const Complaince = () => {
           </Stack>
         </Stack>
       </Box>
-    </>
+    </Box>
   );
 };
 
