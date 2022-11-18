@@ -1,5 +1,11 @@
-import { Box, Divider, Link, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Link,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
+import DropDown from "../DropDown";
 
 const Footer = () => {
   return (
@@ -9,14 +15,12 @@ const Footer = () => {
         pt="56px"
         sx={{
           maxWidth: { xs: "84%", sm: "90%", md: "84%" },
-          //   height: { md: "480px" },
         }}
       >
         <Box
           sx={{
-            display: { md: "flex" },
+            display: { xs: "none", sm: "flex" },
             gap: { md: "32px" },
-            // height: { md: "279px" },
           }}
         >
           <Stack
@@ -24,19 +28,19 @@ const Footer = () => {
             alignItems="flex-start"
             gap="16px"
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
-              width: { xs: "600", sm: "173.33px" },
+              fontSize: { xs: "14px", sm: "12px", lg: "14px" },
+              lineHeight: { xs: "20px" },
+              fontWeight: { xs: "400" },
+              width: { sm: "173.33px" },
             }}
             color="#F8FAFC"
             letterSpacing="0.001em"
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-                lineHeight: { xs: "28px", sm: "23px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "19px", sm: "15px", lg: "19px" },
+                lineHeight: { xs: "23px" },
+                fontWeight: { xs: "700" },
               }}
               letterSpacing="-0.02em"
             >
@@ -67,19 +71,19 @@ const Footer = () => {
             alignItems="flex-start"
             gap="16px"
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
-              width: { xs: "600", sm: "173.33px" },
+              fontSize: { xs: "14px", sm: "12px", lg: "14px" },
+              lineHeight: { xs: "20px" },
+              fontWeight: { xs: "400" },
+              width: { sm: "173.33px" },
             }}
             color="#F8FAFC"
             letterSpacing="0.001em"
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-                lineHeight: { xs: "28px", sm: "23px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "19px", sm: "15px", lg: "19px" },
+                lineHeight: { xs: "23px" },
+                fontWeight: { xs: "700" },
               }}
               letterSpacing="-0.02em"
             >
@@ -101,19 +105,19 @@ const Footer = () => {
             alignItems="flex-start"
             gap="16px"
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
-              width: { xs: "600", sm: "173.33px" },
+              fontSize: { xs: "14px", sm: "12px", lg: "14px" },
+              lineHeight: { xs: "20px" },
+              fontWeight: { xs: "400" },
+              width: { sm: "173.33px" },
             }}
             color="#F8FAFC"
             letterSpacing="0.001em"
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-                lineHeight: { xs: "28px", sm: "23px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "19px", sm: "15px", lg: "19px" },
+                lineHeight: { xs: "23px" },
+                fontWeight: { xs: "700" },
               }}
               letterSpacing="-0.02em"
             >
@@ -132,19 +136,19 @@ const Footer = () => {
             alignItems="flex-start"
             gap="16px"
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
-              width: { xs: "600", sm: "173.33px" },
+              fontSize: { xs: "14px", sm: "12px", lg: "14px" },
+              lineHeight: { xs: "20px" },
+              fontWeight: { xs: "400" },
+              width: { sm: "173.33px" },
             }}
             color="#F8FAFC"
             letterSpacing="0.001em"
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-                lineHeight: { xs: "28px", sm: "23px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "19px", sm: "15px", lg: "19px" },
+                lineHeight: { xs: "23px" },
+                fontWeight: { xs: "700" },
               }}
               letterSpacing="-0.02em"
             >
@@ -163,19 +167,19 @@ const Footer = () => {
             alignItems="flex-start"
             gap="16px"
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
-              width: { xs: "600", sm: "173.33px" },
+              fontSize: { xs: "14px", sm: "12px", lg: "14px" },
+              lineHeight: { xs: "20px" },
+              fontWeight: { xs: "400" },
+              width: { sm: "173.33px" },
             }}
             color="#F8FAFC"
             letterSpacing="0.001em"
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-                lineHeight: { xs: "28px", sm: "23px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "19px", sm: "15px", lg: "19px" },
+                lineHeight: { xs: "23px" },
+                fontWeight: { xs: "700" },
               }}
               letterSpacing="-0.02em"
             >
@@ -200,19 +204,19 @@ const Footer = () => {
             alignItems="flex-start"
             gap="16px"
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "14px" },
-              lineHeight: { xs: "28px", sm: "20px" },
-              fontWeight: { xs: "600", sm: "400" },
-              width: { xs: "600", sm: "173.33px" },
+              fontSize: { xs: "14px", sm: "12px", lg: "14px" },
+              lineHeight: { xs: "20px" },
+              fontWeight: { xs: "400" },
+              width: { sm: "173.33px" },
             }}
             color="#F8FAFC"
             letterSpacing="0.001em"
           >
             <Typography
               sx={{
-                fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-                lineHeight: { xs: "28px", sm: "23px" },
-                fontWeight: { xs: "600", sm: "700" },
+                fontSize: { xs: "19px", sm: "15px", lg: "19px" },
+                lineHeight: { xs: "23px" },
+                fontWeight: { xs: "700" },
               }}
               letterSpacing="-0.02em"
             >
@@ -230,8 +234,32 @@ const Footer = () => {
           </Stack>
         </Box>
 
+        {/* mobile view */}
+        <Box
+          sx={{
+            display: { xs: "flex", sm: "none" },
+            gap: { xs: "32px" },
+          }}
+          flexDirection="column"
+          marginTop="0px"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <DropDown title={"Company"} />
+
+          <DropDown title={"Links"} />
+
+          <DropDown title={"Resources"} />
+
+          <DropDown title={"Product"} />
+
+          <DropDown title={"Support"} />
+
+          <DropDown title={"Legal"} />
+        </Box>
+
         <Box margin="20px 0px">
-          <hr style={{"height":"1px", "backgroundColor":"#CBD5E1"}}/>
+          <hr style={{ height: "1px", backgroundColor: "#CBD5E1" }} />
         </Box>
 
         <Box
@@ -243,9 +271,9 @@ const Footer = () => {
         >
           <Typography
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "19px" },
-              lineHeight: { xs: "28px", sm: "23px" },
-              fontWeight: { xs: "600", sm: "800" },
+              fontSize: { xs: "19px", sm: "20px", md: "24px", lg: "19px" },
+              lineHeight: { xs: "23px" },
+              fontWeight: { xs: "800" },
             }}
             letterSpacing="-0.02em"
           >
@@ -254,9 +282,9 @@ const Footer = () => {
 
           <Typography
             sx={{
-              fontSize: { xs: "23px", sm: "20px", md: "24px", lg: "12px" },
-              lineHeight: { xs: "28px", sm: "18px" },
-              fontWeight: { xs: "600", sm: "400" },
+              fontSize: { xs: "12px" },
+              lineHeight: { xs: "18px" },
+              fontWeight: { xs: "400" },
             }}
             letterSpacing="-0.02em"
           >

@@ -5,10 +5,9 @@ const NavComponent = () => {
   return (
     <Grid
       sx={{
-        maxWidth: { xs: "84%", sm: "95%", md: "84%" },
+        maxWidth: { xs: "90%", sm: "95%", md: "84%" },
         minHeight: { xs: "56px", sm: "100px" },
-        gap:{ sm:"60px", md:"223px", lg:"300px", xl:"390px"},
-        justifyContent: {xs:"space-between", sm:"center"}
+        justifyContent: {xs:"space-between"}
       }}
       minHeight="100px"
       display="flex"
@@ -19,7 +18,7 @@ const NavComponent = () => {
       <Grid display="flex" justifyContent="center" alignItems="center">
         <Typography
           sx={{
-            fontSize: { xs: "23px", sm: "17px", md: "24px",lg:"30px", xl:"34px" },
+            fontSize: { xs: "23px", sm: "17px", md: "24px",lg:"29px", xl:"34px" },
             lineHeight: { xs: "28px", sm: "40px" },
             fontWeight: { xs: "600", sm: "700" },
           }}
