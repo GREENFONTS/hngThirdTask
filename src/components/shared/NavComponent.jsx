@@ -1,7 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
+import DrawerComponent from "./Drawer";
 
 const NavComponent = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  const HandleDrawerState = () => {
+    setIsOpen(!isOpen)
+  }
+
+  console.log(isOpen)
   return (
     <Grid
       sx={{
@@ -62,10 +71,11 @@ const NavComponent = () => {
         p="12px"
         sx={{ display: { xs: "flex", sm: "none" } }}
         cursor="pointer"
+        onClick={() => setIsOpen(true)}
       >
         <img src="assets/svg/MenuIcon.svg" alt="MenuIcon" />
       </Box>
-      {/* <DrawerComponent isOpen={drawerState} setIsOpen={setDrawerState}/> */}
+      <DrawerComponent isOpen={isOpen} setIsOpen={HandleDrawerState} navItems={["Home", "Convert", "Currency Profile", "News", "Contact"]}/>
     </Grid>
   );
 };

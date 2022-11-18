@@ -1,9 +1,4 @@
-import {
-  Box,
-  Link,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import React from "react";
 import DropDown from "../DropDown";
 
@@ -238,24 +233,32 @@ const Footer = () => {
         <Box
           sx={{
             display: { xs: "flex", sm: "none" },
-            gap: { xs: "32px" },
+            gap: { xs: "22px" },
           }}
           flexDirection="column"
           marginTop="0px"
           justifyContent="center"
           alignItems="center"
         >
-          <DropDown title={"Company"} />
-
-          <DropDown title={"Links"} />
-
-          <DropDown title={"Resources"} />
-
-          <DropDown title={"Product"} />
-
-          <DropDown title={"Support"} />
-
-          <DropDown title={"Legal"} />
+          <DropDown
+            title={"Company"}
+            Items={[
+              "About Us",
+              "Careers",
+              "Patnerships",
+              "Meet the team",
+              "Press",
+              "Board of directors",
+            ]}
+          />
+          <DropDown title={"Links"} Items={["Convert", "News", "Contact Us"]} />
+          <DropDown
+            title={"Resources"}
+            Items={["Currency Encyclopedia", "Historical currency exchange"]}
+          />
+          <DropDown title={"Product"} Items={["API", "Integration matrix"]} />
+          <DropDown title={"Support"} Items={["Help Centre", "FAQ", "File a complaint", "Fraud Report"]} />
+          <DropDown title={"Legal"} Items={["Private Policy", "Terms and Conditions", "Cookie Policy"]}/>
         </Box>
 
         <Box margin="20px 0px">
