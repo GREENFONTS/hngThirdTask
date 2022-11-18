@@ -24,6 +24,7 @@ const NavComponent = () => {
           }}
           color="#00296B"
           letterSpacing="-0.04em"
+          role="heading"
         >
           Street Rate
         </Typography>
